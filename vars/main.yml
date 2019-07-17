@@ -1,0 +1,4 @@
+---
+pkg: apache2
+src: /home/ubuntu/gitrepo/ansiblerole/files/index.html
+dest: /var/www/html

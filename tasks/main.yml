@@ -1,0 +1,11 @@
+---
+ - name: installing "{{pkg}}"
+   apt:
+    name: "{{pkg}}"
+    state: present
+   notify: restart service
+ - name: deployment
+   copy:
+    src: "{{src}}"
+    dest: "{{dest}}"
+   notify: restart service
